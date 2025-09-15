@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(https://i0.wp.com/vsegda-pomnim.com/uploads/posts/2023-07/1689353946_vsegda-pomnim-com-p-noutbuk-nochyu-foto-35.jpg?ssl=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  color: white;
+}
+
+.text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social a {
+  position: relative;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.social a:hover,
+.social a.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+
+.social a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+  opacity: 0;
+  border-radius: 50%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: -1;
+}
+
+.social a:hover::before,
+.social a.active::before {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+
+.social a i {
+  transition: all 0.3s ease;
+  filter: brightness(1);
+}
+
+.social a:hover i,
+.social a.active i {
+  filter: brightness(2);
+  transform: scale(1.1);
+}
+
+.image {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.image img:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+
+.second {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.seconds {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    padding: 20px;
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px; 
+}
+
+.text {
+    max-width: 5000px;
+  
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    color: #ffffff;
+}
+
+.event {
+    background-color: #ffffff;
+    
+    padding:- 1px;
+    margin-bottom: -20px;
+}
